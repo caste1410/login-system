@@ -6,7 +6,7 @@ class Login < Sinatra::Base
     configure do
         DB = Sequel.connect("mysql2://root:caste1410@localhost/login_system")
         Dir[File.join(File.dirname(__FILE__),'models','*.rb')].each { |model| require model }
-        Dir[File.join(File.dirname(__FILE__),'lib','*.rb')].each { |lib| load lib }
+        Dir[File.join(File.dirname(__FILE__),'routes','*.rb')].each { |lib| load lib }
     end
     enable :sessions
     before do
