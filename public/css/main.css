@@ -1,0 +1,68 @@
+body{
+    background: rgba(173, 154, 65, 0.45);
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #AD9A41;
+      border-radius: 6px;
+  }
+  
+  nav li  #inicio{
+    float: left;
+  }
+ #inicio{
+  
+      display: block;
+      color: #DFD7B3;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-style: normal;
+      font-size: 20px;
+      font-family: Arial;
+  }
+  
+  nav li button {
+    float: right;
+    display: block;
+    color: #DFD7B3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: Transparent;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Arial;
+  }
+  #boton-cancelar{
+    border: 2px solid #DFD7B3;
+    border-radius: 3px;
+  }
+  #boton-ingresar{
+    border: none;
+  }
+  
+  nav li a:hover, button:hover {
+      background-color: #122450;
+      text-decoration: underline;
+      border-radius: 3px;
+  }
+  .main-content{
+    width: 700px;
+    padding: 20px;
+    color: #122450;
+    margin: 30px auto 0 auto;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Arial;
+  }
+  .main-content h2, h3{
+    text-align: center;
+  }

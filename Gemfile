@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+    gem 'bundler', '2.0.1'
+    gem 'sinatra', '2.0.5'
+    gem 'sequel', '5.18.0'
+    gem 'mysql2', '0.5.2'
+    gem 'haml', '5.0.4'
