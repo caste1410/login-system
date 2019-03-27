@@ -15,6 +15,6 @@
     .login-page
       .form
         %form.login-form{:action => "/login", :method => "post"}
-          %input{:name => "logemail", :placeholder => "Nombre", :required => "", :type => "text"}/
-          %input{:name => "logpassword", :placeholder => "Contraseña", :required => "", :type => "password"}/
+          %input{:name => "name", :placeholder => "Nombre", :required => "", :type => "text"}/
+          %input{:name => "password", :placeholder => "Contraseña", :required => "", :type => "password"}/
           %button#boton-entrar{:type => "submit"} Entrar
