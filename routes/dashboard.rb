@@ -1,5 +1,5 @@
 class Login < Sinatra::Base
     get '/dashboard/?' do
-        return "Hola"
+        haml :dashboard
     end
 end

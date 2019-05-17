@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'bundler/setup'
+require 'digest'
 
 Bundler.require
 

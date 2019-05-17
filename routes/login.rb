@@ -1,12 +1,16 @@
 class Login < Sinatra::Base
     get '/login/?' do
-        haml :login
+        if session[:user_id].nil?
+            haml :login
+        else
+            redirect '/dashboard'
+        end
     end
     post '/login/?' do
-        md5sum = Digest::Md5.hexdigest params[:password]
-        user = User.first(name: params[:name], password: md5sum)
+        sha = Digest::SHA256.hexdigest params[:password]
+        user = User.first(name: params[:name], password: sha)
         if user.nil?
-            haml :error, locals: {error: 'Invalid login credentials'}
+            redirect '/login'
         else
             session[:user_id] = user.id
             redirect '/dashboard'
