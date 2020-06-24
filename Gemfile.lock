@@ -6,7 +6,7 @@ GEM
       tilt
     mustermann (1.0.3)
     mysql2 (0.5.2)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-protection (2.0.5)
       rack
     sequel (5.18.0)
